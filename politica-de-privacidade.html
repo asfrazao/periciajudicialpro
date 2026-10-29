@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de Privacidade da Perícia Judicial Pro, em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD).">
+  <meta name="robots" content="index, follow">
+  <title>Política de Privacidade | Perícia Judicial Pro</title>
+  <style>
+    :root {
+      --navy: #081b2b;
+      --navy-soft: #0e2b40;
+      --orange: #f58220;
+      --orange-light: #ffad63;
+      --paper: #f5f7f8;
+      --ink: #172430;
+      --muted: #53616b;
+      --line: #dce4e8;
+      --white: #fff;
+      --max-width: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: "Work Sans", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--orange); }
+    a:hover, a:focus { color: #bf5b08; }
+    a:focus-visible { outline: 3px solid var(--orange-light); outline-offset: 3px; }
+
+    .site-header {
+      background: var(--navy);
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+    }
+
+    .header-inner,
+    .footer-inner,
+    .content-wrap {
+      width: min(calc(100% - 48px), var(--max-width));
+      margin: 0 auto;
+    }
+
+    .header-inner {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand img {
+      display: block;
+      width: 140px;
+      height: 38px;
+      object-fit: contain;
+    }
+
+    .back-link {
+      color: var(--white);
+      font-size: .9rem;
+      font-weight: 600;
+      letter-spacing: .02em;
+      text-decoration: none;
+    }
+
+    .back-link::before { content: "←"; margin-right: 9px; color: var(--orange-light); }
+    .back-link:hover, .back-link:focus { color: var(--orange-light); }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 84px 0 76px;
+      color: var(--white);
+      background: linear-gradient(120deg, var(--navy) 0%, #123a53 100%);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      right: -130px;
+      top: -210px;
+      border: 1px solid rgba(245, 130, 32, .25);
+      border-radius: 50%;
+      box-shadow: 0 0 0 42px rgba(245, 130, 32, .04), 0 0 0 84px rgba(245, 130, 32, .03);
+    }
+
+    .hero-inner { position: relative; z-index: 1; }
+
+    .eyebrow {
+      margin: 0 0 16px;
+      color: var(--orange-light);
+      font-size: .76rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+      font-family: "DM Serif Display", Georgia, serif;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    h1 { max-width: 760px; margin-bottom: 18px; font-size: clamp(2.6rem, 6vw, 4.55rem); }
+
+    .hero-subtitle { max-width: 650px; margin: 0 0 30px; color: #d9e5eb; font-size: 1.2rem; }
+
+    .updated {
+      display: inline-block;
+      padding: 9px 14px;
+      border-left: 3px solid var(--orange);
+      color: #e9f0f3;
+      background: rgba(255, 255, 255, .07);
+      font-size: .9rem;
+    }
+
+    .content-wrap { padding-top: 66px; padding-bottom: 76px; }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 258px;
+      gap: 52px;
+      align-items: start;
+    }
+
+    .policy {
+      min-width: 0;
+      padding: clamp(28px, 5vw, 58px);
+      border: 1px solid var(--line);
+      background: var(--white);
+      box-shadow: 0 18px 45px rgba(8, 27, 43, .07);
+    }
+
+    .policy section + section { margin-top: 46px; }
+
+    h2 {
+      display: flex;
+      gap: 14px;
+      align-items: baseline;
+      margin-bottom: 17px;
+      color: var(--navy);
+      font-size: clamp(1.65rem, 3vw, 2.15rem);
+    }
+
+    h2 .number {
+      flex: 0 0 auto;
+      color: var(--orange);
+      font-family: "Work Sans", Arial, sans-serif;
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+
+    h3 { margin: 28px 0 10px; color: var(--navy-soft); font-size: 1.25rem; }
+    p { margin: 0 0 16px; }
+    ul { margin: 0 0 18px; padding-left: 1.25rem; }
+    li + li { margin-top: 7px; }
+
+    .identity {
+      margin: 22px 0 0;
+      padding: 22px 24px;
+      border-left: 3px solid var(--orange);
+      background: #fff8f1;
+    }
+
+    .identity p { margin-bottom: 6px; }
+    .identity p:last-child { margin-bottom: 0; }
+    .identity strong { color: var(--navy); }
+
+    .notice {
+      margin: 22px 0;
+      padding: 22px 24px;
+      border: 1px solid #f0c99f;
+      background: #fff9f2;
+    }
+
+    .notice strong { color: #9a4d08; }
+
+    .toc {
+      position: sticky;
+      top: 24px;
+      padding: 24px 22px;
+      border-top: 3px solid var(--orange);
+      background: var(--navy);
+      color: #d9e5eb;
+    }
+
+    .toc h2 { display: block; margin-bottom: 14px; color: var(--white); font-family: "Work Sans", Arial, sans-serif; font-size: .9rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .toc ol { margin: 0; padding-left: 1.15rem; }
+    .toc li { padding: 3px 0; font-size: .86rem; line-height: 1.45; }
+    .toc a { color: #d9e5eb; text-decoration: none; }
+    .toc a:hover, .toc a:focus { color: var(--orange-light); }
+
+    .site-footer { padding: 42px 0; color: #c8d5dc; background: var(--navy); }
+
+    .footer-inner { display: flex; justify-content: space-between; gap: 30px; align-items: center; }
+    .footer-title { margin: 0 0 5px; color: var(--white); font-family: "DM Serif Display", Georgia, serif; font-size: 1.35rem; }
+    .footer-inner p { margin: 0; font-size: .88rem; }
+    .footer-links { text-align: right; }
+    .footer-links a { display: block; margin-bottom: 5px; }
+    .footer-links a:last-child { margin-bottom: 0; }
+
+    @media (max-width: 800px) {
+      .layout { grid-template-columns: 1fr; gap: 28px; }
+      .toc { position: static; order: -1; }
+      .toc ol { columns: 2; column-gap: 28px; }
+    }
+
+    @media (max-width: 560px) {
+      .header-inner, .footer-inner, .content-wrap { width: min(calc(100% - 32px), var(--max-width)); }
+      .header-inner { min-height: 74px; }
+      .brand img { width: 126px; height: auto; }
+      .back-link { font-size: .8rem; }
+      .hero { padding: 58px 0 54px; }
+      .hero-subtitle { font-size: 1.05rem; }
+      .content-wrap { padding-top: 34px; padding-bottom: 48px; }
+      .policy { padding: 25px 20px; }
+      .policy section + section { margin-top: 38px; }
+      h2 { gap: 10px; }
+      .toc ol { columns: 1; }
+      .footer-inner { display: block; }
+      .footer-links { margin-top: 20px; text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Perícia Judicial Pro — voltar ao início">
+        <img src="images/logo_brancapng-140x38-1.png" width="140" height="38" alt="Perícia Judicial Pro">
+      </a>
+      <a class="back-link" href="index.html">Voltar ao site</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="header-inner hero-inner">
+        <p class="eyebrow">Perícia Judicial Pro</p>
+        <h1 id="page-title">Política de Privacidade</h1>
+        <p class="hero-subtitle">Transparência e proteção de dados pessoais em cada contato.</p>
+        <p class="updated"><strong>Última atualização:</strong> 29 de outubro de 2026</p>
+      </div>
+    </section>
+
+    <div class="content-wrap">
+      <div class="layout">
+        <article class="policy">
+          <section id="introducao">
+            <h2><span class="number">01</span> Introdução</h2>
+            <p>A Perícia Judicial Pro valoriza a privacidade, a segurança e a transparência no tratamento de dados pessoais. Esta Política de Privacidade explica como dados podem ser tratados quando uma pessoa acessa o site <a href="https://periciajudicialpro.com.br">periciajudicialpro.com.br</a>, interage com nossos perfis em redes sociais, utiliza formulários de captação de leads do Facebook ou Instagram, ou entra em contato para conhecer nossos serviços.</p>
+            <p>O tratamento ocorre de acordo com a Lei nº 13.709/2018 — Lei Geral de Proteção de Dados Pessoais (LGPD) — e com as demais normas aplicáveis. O simples preenchimento de um formulário não representa consentimento irrestrito para qualquer finalidade: cada operação deve ter finalidade, base legal e tratamento compatíveis com o contexto da interação.</p>
+          </section>
+
+          <section id="controlador">
+            <h2><span class="number">02</span> Identificação do controlador</h2>
+            <p>Quando atuar como controladora, a empresa responsável define as finalidades e os meios do tratamento dos dados pessoais descritos nesta política.</p>
+            <div class="identity">
+              <p><strong>Nome comercial:</strong> Perícia Judicial Pro</p>
+              <p><strong>Razão social:</strong> Perito Alessandro Frazao LTDA</p>
+              <p><strong>CNPJ:</strong> 24.194.474/0001-96</p>
+              <p><strong>Responsável técnico:</strong> Alessandro Frazão</p>
+              <p><strong>Site:</strong> <a href="https://periciajudicialpro.com.br">periciajudicialpro.com.br</a></p>
+              <p><strong>Canal de privacidade:</strong> <a href="mailto:alefrazao.peritojudicial@gmail.com">alefrazao.peritojudicial@gmail.com</a></p>
+            </div>
+          </section>
+
+          <section id="dados">
+            <h2><span class="number">03</span> Dados pessoais coletados</h2>
+            <p>Dependendo do canal e da finalidade da interação, podem ser tratados:</p>
+            <ul>
+              <li>nome completo;</li>
+              <li>e-mail e telefone;</li>
+              <li>atuação profissional;</li>
+              <li>tipo de serviço solicitado;</li>
+              <li>prazo previsto para contratação;</li>
+              <li>informações fornecidas voluntariamente na mensagem ou no atendimento; e</li>
+              <li>dados técnicos de navegação, como informações do dispositivo, navegador e acesso, quando efetivamente coletados pelas ferramentas utilizadas.</li>
+            </ul>
+            <p>Solicitamos que a pessoa informe apenas o que for necessário para a finalidade apresentada. Dados pessoais sensíveis ou dados de terceiros não devem ser enviados em formulários de publicidade.</p>
+          </section>
+
+          <section id="finalidades">
+            <h2><span class="number">04</span> Finalidades do tratamento</h2>
+            <p>Os dados podem ser tratados para:</p>
+            <ul>
+              <li>responder a solicitações e dúvidas;</li>
+              <li>avaliar demandas de serviços técnicos, documentais e de perícia digital;</li>
+              <li>entrar em contato com pessoas interessadas;</li>
+              <li>elaborar propostas e orçamentos;</li>
+              <li>prestar os serviços contratados e acompanhar sua execução;</li>
+              <li>cumprir obrigações legais, regulatórias ou decorrentes de ordens de autoridade competente; e</li>
+              <li>proteger sistemas, informações, direitos e a segurança das pessoas.</li>
+            </ul>
+          </section>
+
+          <section id="bases-legais">
+            <h2><span class="number">05</span> Bases legais</h2>
+            <p>A base legal é definida conforme a operação efetivamente realizada. Podem ser aplicadas, entre outras hipóteses do artigo 7º da LGPD:</p>
+            <ul>
+              <li>a realização de procedimentos preliminares relacionados a contrato, a pedido do titular;</li>
+              <li>a execução de contrato ou de providências relacionadas ao contrato;</li>
+              <li>o cumprimento de obrigação legal ou regulatória;</li>
+              <li>o legítimo interesse, quando cabível, após a análise de necessidade, adequação e respeito às expectativas do titular; e</li>
+              <li>o consentimento, quando necessário, solicitado de modo livre, informado e inequívoco para uma finalidade determinada.</li>
+            </ul>
+            <p>Quando o tratamento depender de consentimento, a pessoa poderá recusá-lo ou revogá-lo, sem prejuízo da legalidade dos tratamentos realizados anteriormente com base no consentimento válido.</p>
+          </section>
+
+          <section id="compartilhamento">
+            <h2><span class="number">06</span> Compartilhamento de informações</h2>
+            <p>Os dados podem ser acessados por fornecedores que prestem serviços tecnológicos, de hospedagem, comunicação, organização de atendimento ou suporte operacional, sempre conforme a necessidade da finalidade correspondente e as instruções aplicáveis.</p>
+            <p>Em campanhas de captação, a Meta Platforms, Inc. e empresas do grupo podem tratar informações conforme seus próprios termos e políticas, inclusive quando o contato ocorrer por formulário instantâneo no Facebook ou Instagram. A pessoa deve consultar também os avisos de privacidade da plataforma utilizada.</p>
+            <p>Não comercializamos dados pessoais. O compartilhamento não autoriza o uso dos dados para finalidades incompatíveis com as informadas ou permitidas pela legislação.</p>
+          </section>
+
+          <section id="retencao">
+            <h2><span class="number">07</span> Armazenamento e retenção</h2>
+            <p>Os dados são conservados somente pelo período necessário ao cumprimento das finalidades informadas, considerando a natureza da demanda, a relação contratual e as hipóteses de conservação permitidas ou exigidas pela LGPD e por outras normas aplicáveis.</p>
+            <div class="notice"><strong>Regra operacional a confirmar antes da publicação:</strong> para leads comerciais que não resultarem em contratação, propõe-se a retenção máxima de 12 meses após a última interação. Essa regra deve ser confirmada internamente, considerando os sistemas efetivamente utilizados, os fluxos de atendimento e eventuais obrigações de conservação.</div>
+            <p>Após o fim da necessidade de retenção, os dados serão eliminados ou anonimizados quando tecnicamente possível e juridicamente adequado, ressalvadas as hipóteses legais de conservação.</p>
+          </section>
+
+          <section id="seguranca">
+            <h2><span class="number">08</span> Segurança e confidencialidade</h2>
+            <p>São adotadas medidas proporcionais aos riscos e à natureza das informações, incluindo organização de acessos, orientação de pessoas autorizadas, cuidado na circulação de informações e avaliação de fornecedores e canais utilizados. O acesso aos dados deve ser limitado a quem necessite dele para suas atribuições.</p>
+            <p>Nenhum ambiente digital é absolutamente imune a incidentes. Se ocorrer evento relevante envolvendo dados pessoais, serão avaliadas as medidas cabíveis de contenção, investigação, comunicação e atendimento às exigências legais.</p>
+            <p>Esta política não afirma a existência de criptografia, certificações ou outros mecanismos técnicos específicos que não tenham sido verificados.</p>
+          </section>
+
+          <section id="cookies">
+            <h2><span class="number">09</span> Cookies e ferramentas externas</h2>
+            <p>Cookies são pequenos arquivos ou identificadores que podem ser utilizados pelo navegador para permitir funcionalidades, lembrar preferências ou produzir informações técnicas. O uso efetivo depende das ferramentas carregadas em cada página e da configuração do navegador.</p>
+            <p>Na versão do site analisada para esta política, foi identificada referência a fontes do Google Fonts e a links para redes sociais, incluindo Instagram. Não foram identificados, no HTML analisado, uma biblioteca própria de cookies, formulário incorporado, ferramenta de analytics ou ferramenta de publicidade além da operação de captação da Meta. Recursos externos podem receber dados técnicos necessários à conexão, conforme suas próprias políticas.</p>
+            <p>Antes da publicação, deve ser confirmada a configuração vigente do site, do provedor de hospedagem, das campanhas e das plataformas de terceiros. Se houver cookies não essenciais, deverão ser avaliados os requisitos aplicáveis de informação, gestão de preferências e consentimento.</p>
+          </section>
+
+          <section id="direitos">
+            <h2><span class="number">10</span> Direitos dos titulares</h2>
+            <p>Nos termos do artigo 18 da LGPD, o titular pode solicitar, observados os requisitos legais e as hipóteses aplicáveis:</p>
+            <ul>
+              <li>confirmação da existência de tratamento e acesso aos dados;</li>
+              <li>correção de dados incompletos, inexatos ou desatualizados;</li>
+              <li>anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade;</li>
+              <li>portabilidade, observada a regulamentação da Autoridade Nacional de Proteção de Dados (ANPD) e os segredos comercial e industrial;</li>
+              <li>eliminação dos dados tratados com base no consentimento, salvo as exceções legais;</li>
+              <li>informação sobre entidades públicas e privadas com as quais houve compartilhamento;</li>
+              <li>informação sobre a possibilidade de não fornecer consentimento e sobre as consequências da negativa;</li>
+              <li>revogação do consentimento, quando essa for a base legal;</li>
+              <li>oposição ao tratamento realizado com fundamento em hipótese legal diversa do consentimento, quando houver descumprimento da LGPD; e</li>
+              <li>revisão de decisões tomadas unicamente com base em tratamento automatizado, quando aplicável.</li>
+            </ul>
+            <p>As solicitações devem ser enviadas ao canal <a href="mailto:alefrazao.peritojudicial@gmail.com">alefrazao.peritojudicial@gmail.com</a>, com uma descrição clara do pedido. Poderemos solicitar informações razoáveis para confirmar a identidade e evitar acesso indevido. Cada pedido será analisado e respondido nos prazos e limites previstos na legislação.</p>
+          </section>
+
+          <section id="documentos">
+            <h2><span class="number">11</span> Documentos processuais e dados confidenciais</h2>
+            <p>Formulários de publicidade e canais iniciais de captação não devem receber documentos sigilosos, informações processuais confidenciais, dados pessoais de terceiros, arquivos com segredo de justiça ou materiais cuja divulgação possa causar risco ou violar dever profissional.</p>
+            <p>Documentos relacionados às atividades periciais devem ser encaminhados somente após a avaliação da demanda e por canais adequados, conforme orientação específica. A pessoa que compartilhar informações deve possuir autorização ou outra base legítima para fazê-lo.</p>
+          </section>
+
+          <section id="transferencias">
+            <h2><span class="number">12</span> Transferências internacionais</h2>
+            <p>Alguns fornecedores de tecnologia, hospedagem, comunicação e plataformas de publicidade podem tratar informações fora do Brasil. Quando houver transferência internacional, ela deverá observar os requisitos da LGPD, as regras da ANPD e os mecanismos jurídicos aplicáveis ao caso, além das políticas dos respectivos fornecedores.</p>
+          </section>
+
+          <section id="atualizacoes">
+            <h2><span class="number">13</span> Atualizações da política</h2>
+            <p>Esta Política de Privacidade pode ser atualizada para refletir mudanças nos serviços, nas ferramentas utilizadas, nas práticas de tratamento ou na legislação. A versão vigente ficará disponível no endereço oficial <a href="https://periciajudicialpro.com.br/politica-de-privacidade.html">periciajudicialpro.com.br/politica-de-privacidade.html</a>, com a data da última atualização indicada no início do documento.</p>
+          </section>
+
+          <section id="contato">
+            <h2><span class="number">14</span> Canal de contato</h2>
+            <p>Para dúvidas, solicitações ou informações relacionadas ao tratamento de dados pessoais:</p>
+            <div class="identity">
+              <p><strong>Perícia Judicial Pro</strong></p>
+              <p><strong>Responsável técnico:</strong> Alessandro Frazão</p>
+              <p><strong>E-mail:</strong> <a href="mailto:alefrazao.peritojudicial@gmail.com">alefrazao.peritojudicial@gmail.com</a></p>
+              <p><strong>Site:</strong> <a href="https://periciajudicialpro.com.br">https://periciajudicialpro.com.br</a></p>
+            </div>
+          </section>
+        </article>
+
+        <nav class="toc" aria-label="Navegação da política">
+          <h2>Nesta política</h2>
+          <ol>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#controlador">Controlador</a></li>
+            <li><a href="#dados">Dados coletados</a></li>
+            <li><a href="#finalidades">Finalidades</a></li>
+            <li><a href="#bases-legais">Bases legais</a></li>
+            <li><a href="#compartilhamento">Compartilhamento</a></li>
+            <li><a href="#retencao">Retenção</a></li>
+            <li><a href="#seguranca">Segurança</a></li>
+            <li><a href="#cookies">Cookies</a></li>
+            <li><a href="#direitos">Direitos</a></li>
+            <li><a href="#documentos">Documentos</a></li>
+            <li><a href="#transferencias">Transferências</a></li>
+            <li><a href="#atualizacoes">Atualizações</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-title">Perícia Judicial Pro</p>
+        <p>Responsável técnico: Alessandro Frazão</p>
+        <p>Perito Alessandro Frazao LTDA · CNPJ: 24.194.474/0001-96</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:alefrazao.peritojudicial@gmail.com">alefrazao.peritojudicial@gmail.com</a>
+        <a href="index.html">Voltar ao site principal</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
